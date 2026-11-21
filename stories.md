@@ -83,9 +83,8 @@ Europe
 33. Coalition troops train in the shadow of the Ukraine war — REPORTED — AFP 00:42 UTC
 34. Kushner cites Russian openness to Ukraine security guarantees — CLAIM — Manifest 01:01 UTC
 35. US resumes intelligence sharing on Russian missile threats — REPORTED — Ilkha
-36. New explosions in Kyiv amid a drone alert — REPORTED — la Repubblica, 20 Nov 23:51 UTC
-37. Students rally across Europe over living costs, war and cuts — REPORTED — ABC
-38. Unidentified drones fly over Karup military base in Denmark — REPORTED — European Observatory
+36. NATO scrambles jets as a Russian missile strikes Poland — REPORTED — Independent, 21 Nov 01:30 UTC
+37. Young protesters hit the streets across Europe — REPORTED — AFP, 21 Nov 02:52 UTC
 39. Russian scientists build a smart implant that regrows bone — REPORTED — Tomsk Polytechnic
 40. Newcastle host Arsenal in the late kick-off; Man City face Fulham — FORECAST — Sporting Life, 17:30
 Africa
@@ -97,6 +96,11 @@ Africa
 Latin America
 46. Ecuador extends its state of emergency by 30 days — REPORTED — Ilkha
 47. Brazil recalls its ambassador to Argentina after Milei remarks — REPORTED — Ilkha
+Oceania
+38. Australia, Canada and New Zealand condemn Russia's war in Ukraine — OFFICIAL — MFAT joint statement, 21 Nov 00:22 UTC (verified from the MFAT text: joint statement on the APEC meetings, condemning Russia's aggression)
+
+## CORRECTION (21 Nov, pre-submit audit)
+Three ALSO items first listed from 20 Nov timestamps were replaced with verified 21 Nov stories: 36 Kyiv explosions (la Repubblica 20 Nov 23:51 UTC) → NATO scrambles jets (Independent 21 Nov 01:30 UTC); 37 student rallies (ABC 20 Nov 18:38 UTC) → same rallies via AFP 21 Nov 02:52 UTC; 38 Karup drones (confirmed as of 20 Nov, no 21 Nov timestamp) → Australia/Canada/NZ joint statement (MFAT 21 Nov 00:22 UTC), which also lifts Oceania from 1 story to 2. Region counts now: Middle East 9, Asia 12, Europe 11, Africa 6, North America 4, Latin America 3, Oceania 2 = 47.
 
 ## DATE CHECK — left out on purpose (real dates shown)
 

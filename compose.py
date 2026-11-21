@@ -198,9 +198,8 @@ ALSO = [
         (33, "Coalition troops train in war's shadow", "REPORTED"),
         (34, "Kushner cites Russian openness on guarantees", "CLAIM"),
         (35, "US resumes intel sharing on missile threats", "REPORTED"),
-        (36, "New explosions in Kyiv amid drone alert", "REPORTED"),
-        (37, "Students rally across Europe over costs, war", "REPORTED"),
-        (38, "Drones fly over Karup base in Denmark", "REPORTED"),
+        (36, "NATO scrambles jets as missile strikes Poland", "REPORTED"),
+        (37, "Young protesters hit streets across Europe", "REPORTED"),
         (39, "Russian implant regrows bone, scientists say", "REPORTED"),
         (40, "Newcastle host Arsenal in late kick-off", "FORECAST"),
     ]),
@@ -215,7 +214,21 @@ ALSO = [
         (46, "Ecuador extends emergency by 30 days", "REPORTED"),
         (47, "Brazil recalls envoy to Argentina", "REPORTED"),
     ]),
+    ("OCEANIA", [
+        (38, "Australia, Canada, NZ condemn Russia's war", "OFFICIAL"),
+    ]),
 ]
+
+# Sources behind each ALSO region group (fitted to the column width;
+# the two remaining Europe outlets, TPU and Sporting Life, are in the footer)
+ALSO_SOURCES = {
+    "MIDDLE EAST": "Iran Intl · Xinhua · Vestinger",
+    "ASIA": "Kyodo · Hindu · HKUST · Reuters",
+    "EUROPE": "Ilkha · AFP · Manifest · Independent",
+    "AFRICA": "Daily Nation · GhanaWeb · Punch · Naija News",
+    "LATIN AMERICA": "ILKHA",
+    "OCEANIA": "MFAT",
+}
 
 DATECHECK = [
     "Shenzhen Peace Declaration — signed THU 19 NOV",
@@ -464,13 +477,17 @@ def compose():
     f_item = font(SANS, 10)
     # split ALSO groups into two columns: col A = ME + Asia, col B = rest
     col_a = ALSO[0:2]
-    col_b = ALSO[2:5]
+    col_b = ALSO[2:6]
     sub_w = (aw - 8) // 2  # 328
     for ci, groups in enumerate((col_a, col_b)):
         cx = ax + ci * (sub_w + 8)
         yy = my + 20
         for region, items in groups:
-            d.text((cx, yy), region, font=f_sub, fill=RED)
+            subhead = f"{region} — {ALSO_SOURCES[region]}"
+            lines = wrap(d, subhead, f_sub, sub_w, None)
+            if len(lines) > 1:
+                print(f"OVERFLOW also subhead: {subhead}")
+            d.text((cx, yy), lines[0], font=f_sub, fill=RED)
             yy += 12
             for num, head, conf in items:
                 line = f"{num}. {head} — {conf}"
